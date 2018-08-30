@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('error') {
       steps {
-        sh '''pipeline {
+        sh '''tardis {
    agent any
     
    stages {
