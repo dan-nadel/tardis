@@ -1,9 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('error') {
+    stage('Hello World') {
+      agent any
       steps {
-        sh '''tardis {
+        sh '''pipeline {
    agent any
     
    stages {
