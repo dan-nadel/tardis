@@ -1,11 +1,20 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        sh '''#bash
-Echo "test"'''
+        sh '''pipeline {
+   agent any
+    
+   stages {
+      stage(\'Say Hello\') {
+         steps {
+            echo \'Hello World!\'   
+         }
+      }
+   }
+}'''
+        }
       }
     }
   }
-}
